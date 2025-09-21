@@ -109,3 +109,9 @@ for s in shapes:
 
 print("\n Getter/setter check")
 
+# Circle Shape Test
+c = shapes[2]
+print(c.name, "Current:", c.radius, c.area)
+c.radius = c.radius * 2
+print(c.name, "Doubled:", c.radius, c.area)
+
