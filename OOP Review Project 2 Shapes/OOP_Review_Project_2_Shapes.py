@@ -75,11 +75,11 @@ class Rectangle(BasicShape):
 
 
 # Square Shape Class
-class Square(BasicShape):
+class Square(Rectangle):
     def __init__(self, s, n="Square"):
-        super().__init__(n)
         self._side = s
-        self.calc_area()
+        super().__init__(s, s, n)
+        self.name = n
 
     @property
     def side(self):
@@ -88,10 +88,9 @@ class Square(BasicShape):
     @side.setter
     def side(self, s):
         self._side = s
+        self._length = s
+        self._width = s
         self.calc_area()
-
-    def calc_area(self):
-        self._area = self._side * self._side
 
 
 
