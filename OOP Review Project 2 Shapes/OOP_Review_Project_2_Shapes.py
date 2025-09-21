@@ -107,3 +107,5 @@ print("Polymorphism check")
 for s in shapes:
     print(s.name, "Area =", s.area)
 
+print("\n Getter/setter check")
+
