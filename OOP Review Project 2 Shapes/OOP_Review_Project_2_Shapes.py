@@ -24,8 +24,8 @@ class BasicShape:
 class Circle(BasicShape):
     def __init__(self, a, b, r, n="Circle"):
         super().__init__(n)
-        self._A_center_coordinate = a
-        self._B_center_coordinate = b
+        self._center_A_coordinate = a
+        self._center_B_coordinate = b
         self._radius = r
         self.calc_area()
 
@@ -73,4 +73,23 @@ class Rectangle(BasicShape):
         self._area = self._length * self._width
 
 
+
+# Square Shape Class
+class Square(BasicShape):
+    def __init__(self, s, n="Square"):
+        super().__init__(n)
+        self._side = s
+        self.calc_area()
+
+    @property
+    def side(self):
+        return self._side
+
+    @side.setter
+    def side(self, s):
+        self._side = s
+        self.calc_area()
+
+    def calc_area(self):
+        self._area = self._side * self._side
 
