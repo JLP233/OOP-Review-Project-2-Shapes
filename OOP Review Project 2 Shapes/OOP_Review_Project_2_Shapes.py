@@ -22,10 +22,10 @@ class BasicShape:
 
 # Circle Shape Class
 class Circle(BasicShape):
-    def __init__(self, a, b, r, n="Circle"):
+    def __init__(self, x, y, r, n="Circle"):
         super().__init__(n)
-        self._center_A_coordinate = a
-        self._center_B_coordinate = b
+        self._x_center = x
+        self._y_center = y
         self._radius = r
         self.calc_area()
 
@@ -92,4 +92,19 @@ class Square(BasicShape):
 
     def calc_area(self):
         self._area = self._side * self._side
+
+
+
+# Program Test
+shapes = [
+    Rectangle(10, 20, "Rectangle_1"),
+    Rectangle(20, 30, "Rectangle_2"),
+    Circle(0, 0, 4, "Circle_1"),
+    Circle(2, 2, 9, "Circle_2"),
+    Square(10, "Square")
+]
+
+print("Polymorphism check")
+for s in shapes:
+    print(s.name, "Area =", s.area)
 
