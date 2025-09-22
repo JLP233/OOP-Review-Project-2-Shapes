@@ -115,3 +115,15 @@ print(c.name, "Current:", c.radius, c.area)
 c.radius = c.radius * 2
 print(c.name, "Doubled:", c.radius, c.area)
 
+# Rectangle Shape Test
+r = shapes[0]
+print("\n", r.name, "Current:", r.length, r.width, r.area)
+r.length = r.length * 2
+r.width = r.width * 2
+print(r.name, "Doubled:", r.length, r.width, r.area)
+
+# Square Shape Test
+sq = shapes[4]
+print("\n", sq.name, "Current:", sq.side, sq.area)
+sq.side = sq.side * 2
+print(sq.name, "Doubled:", sq.side, sq.area)
