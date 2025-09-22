@@ -106,8 +106,10 @@ shapes = [
 print("Polymorphism check")
 for s in shapes:
     print(s.name, "Area =", s.area)
+    print() 
 
-print("\n Getter/setter check")
+print("\n")
+print("Getter/setter check"),
 
 # Circle Shape Test
 c = shapes[2]
@@ -117,13 +119,15 @@ print(c.name, "Doubled:", c.radius, c.area)
 
 # Rectangle Shape Test
 r = shapes[0]
-print("\n", r.name, "Current:", r.length, r.width, r.area)
+print("\n")
+print( r.name, "Current:", r.length, r.width, r.area)
 r.length = r.length * 2
 r.width = r.width * 2
 print(r.name, "Doubled:", r.length, r.width, r.area)
 
 # Square Shape Test
 sq = shapes[4]
-print("\n", sq.name, "Current:", sq.side, sq.area)
+print("\n")
+print( sq.name, "Current:", sq.side, sq.area)
 sq.side = sq.side * 2
 print(sq.name, "Doubled:", sq.side, sq.area)
